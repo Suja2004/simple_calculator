@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body">
+    <div class="form">
+    <form class="items" action="simplecalc.php" method="post" >
+    <label ><h3>Num 1</h3></label>
+    <input class="in" type="text" placeholder="num1" name="num1">
+    <label ><h3>Num 2</h3></label>
+    <input class="in" type="text" placeholder="num2" name="num2">
+    <select name="operation" class="in">
+        <option value="sum">Addition</option>
+        <option value="diff">Subtraction</option>
+        <option value="mul">Multiplication</option>
+        <option value="div">Division</option>
+    </select>
+    <input class="in b" type="submit" value="Calculate" name="Calculate"></input>
+    
+    </form>
+   
+    </div>
+    <style>
+       
+    .body{
+        background-color: rgb(22, 32, 36);
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+    .items{
+        background: linear-gradient(to right,
+        #e22b1d, #2f8fdf, #7c0699);
+        border: 0.2rem solid #752c2c;
+        border-radius: 0.5rem;
+        padding: 3rem;
+    }
+   
+    .in{
+        border-radius: 0.4rem;
+        margin: 0.4rem;
+        padding: 10px;
+        color: #444;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    .b{
+        background: linear-gradient(to right,
+        #770699, #2f8fdf, #ce1717);
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+        color: azure;
+        width: 16.5rem;
+    }
+    </style>
+      
+</body>
+</html>
